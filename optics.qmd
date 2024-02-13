@@ -1,0 +1,37 @@
+---
+title: ""
+subtitle: ""
+bibliography: references.bib
+---
+
+![](images/integral-optics-insight-logo-(navy)-rgb-01.png){fig-align="center" width="473"}
+
+## **Background**
+
+The OPTically-based In-situ Characterization System ([OPTICS](https://www.integral-corp.com/our-services/oceans/optics/)) revolutionizes water quality monitoring at aquatic sites. This patented technology (U.S. Patent No. 11079368) is a uniquely powerful and cost-effective tool for characterizing contaminants in surface water. OPTICS is used for a wide variety of environmental applications including source control evaluation, dredge plume characterization, and remedy performance monitoring.
+
+OPTICS combines robust aquatic instrumentation and innovative data processing techniques to provide surface water dissolved and particulate concentrations of a wide range of contaminants at unprecedented scales. The novel use of optically-based in-situ monitoring for high-resolution, robust derivation of chemical properties allows for a complete understanding of water quality and contaminant transport in response to natural processes and human impacts.
+
+Benefits of OPTICS:
+
+●     High-resolution surface water contaminant characterization
+
+●     Cost-effective monitoring and assessment tool
+
+●     Versatile and modular with capability for real-time telemetry
+
+●     Development and understanding of conceptual site models
+
+●     Key line of evidence for designing and evaluating remedies
+
+Additional information and background regarding OPTICS can be found on the Integral YouTube channel. 
+
+Video: OPTICS \[hyperlink when available
+
+## **Resources**
+
+The OPTICS methodology has been effectively utilized for environmental monitoring and remediation purposes in aquatic systems. In the examples below, OPTICS field studies were conducted to characterize contaminant dynamics and quantify contaminant concentrations. This approach facilitates the identification of key processes governing contaminant transport and distribution in these ecosystems, allowing for effective remediation strategies and management practices. [@chang2018, @chang2018b, @chang2024]
+
+OPTICS Insight development and documentation support provided by Ocean Science Analytics.
+
+![](images/white_square_OSA_med.jpg){width="107"}

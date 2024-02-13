@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "OPTICS Insight"
+  sidebar:
+    style: "docked"
+    search: true
+    background: dark
+    logo: images/IntegralLogo.png
+    contents:
+        - text: "Overview"
+          file: optics.qmd
+        - text: "Getting Started"
+          file: gettingstarted.qmd
+        - text: "Reviewing Data"
+          file: datareview.qmd
+        - text: "OPTICS Modeling"
+          file: analysis.qmd
+        - text: "Guided Tutorial"
+          file: tutorial.qmd
+
+format:
+  html:
+    theme: spacelab
+    css: styles.css
+    toc: true
+
+editor: visual
+
