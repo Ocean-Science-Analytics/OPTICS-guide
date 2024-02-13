@@ -1,0 +1,269 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Background",
+    "section": "",
+    "text": "Background\nThe OPTically-based In-situ Characterization System (OPTICS) revolutionizes water quality monitoring at aquatic sites. This patented technology (U.S. Patent No. 11079368) is a uniquely powerful and cost-effective tool for characterizing contaminants in surface water. OPTICS is used for a wide variety of environmental applications including source control evaluation, dredge plume characterization, and remedy performance monitoring.\nOPTICS combines robust aquatic instrumentation and innovative data processing techniques to provide surface water dissolved and particulate concentrations of a wide range of contaminants at unprecedented scales. The novel use of optically-based in-situ monitoring for high-resolution, robust derivation of chemical properties allows for a complete understanding of water quality and contaminant transport in response to natural processes and human impacts.\nBenefits of OPTICS:\n●     High-resolution surface water contaminant characterization\n●     Cost-effective monitoring and assessment tool\n●     Versatile and modular with capability for real-time telemetry\n●     Development and understanding of conceptual site models\n●     Key line of evidence for designing and evaluating remedies\nAdditional information and background regarding OPTICS can be found on the Integral YouTube channel. \nVideo: OPTICS [hyperlink when available\n\n\nResources\nThe OPTICS methodology has been effectively utilized for environmental monitoring and remediation purposes in aquatic systems. In the examples below, OPTICS field studies were conducted to characterize contaminant dynamics and quantify contaminant concentrations. This approach facilitates the identification of key processes governing contaminant transport and distribution in these ecosystems, allowing for effective remediation strategies and management practices. G. Chang et al. (2018)\n\n\n\n\n\nReferences\n\nChang, G., T. Martin, K. Whitehead, C. Jones, and F. Spada. 2018. “Optically Based Quantification of Fluxes of Mercury, Methyl Mercury, and Polychlorinated Biphenyls (PCBs) at Berry’s Creek Tidal Estuary, New Jersey.” Limnology and Oceanography 64 (1): 93–108. https://doi.org/10.1002/lno.11021.\n\n\nChang, Grace, Todd Martin, Frank Spada, Brandon Sackmann, Craig Jones, and Kenia Whitehead. 2018. “OPTically-Based In Situ Characterization System (OPTICS) to Quantify Concentrations and Mass Fluxes of Mercury and Methylmercury in South River, Virginia, USA.” River Research and Applications 34 (9): 1132–41. https://doi.org/10.1002/rra.3361.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "guide.html",
+    "href": "guide.html",
+    "title": "Instructions",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Instructions"
+    ]
+  },
+  {
+    "objectID": "index.html#background",
+    "href": "index.html#background",
+    "title": "OPTICS Insight",
+    "section": "Background",
+    "text": "Background\nThe OPTically-based In-situ Characterization System (OPTICS) revolutionizes water quality monitoring at aquatic sites. This patented technology (U.S. Patent No. 11079368) is a uniquely powerful and cost-effective tool for characterizing contaminants in surface water. OPTICS is used for a wide variety of environmental applications including source control evaluation, dredge plume characterization, and remedy performance monitoring.\nOPTICS combines robust aquatic instrumentation and innovative data processing techniques to provide surface water dissolved and particulate concentrations of a wide range of contaminants at unprecedented scales. The novel use of optically-based in-situ monitoring for high-resolution, robust derivation of chemical properties allows for a complete understanding of water quality and contaminant transport in response to natural processes and human impacts.\nBenefits of OPTICS:\n●     High-resolution surface water contaminant characterization\n●     Cost-effective monitoring and assessment tool\n●     Versatile and modular with capability for real-time telemetry\n●     Development and understanding of conceptual site models\n●     Key line of evidence for designing and evaluating remedies\nAdditional information and background regarding OPTICS can be found on the Integral YouTube channel. \nVideo: OPTICS [hyperlink when available",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#input-file-format-and-naming",
+    "href": "index.html#input-file-format-and-naming",
+    "title": "OPTically-based In-situ Characterization System",
+    "section": "Input File Format and Naming",
+    "text": "Input File Format and Naming\nOPTICS reads in user QA/QC data collected from a variety of instrument sensors including optical and acoustic devices, samples collected for laboratory analysis, and GPS positioning. To enhance compatibility with various sensors and platforms, a standardized CSV (Comma Separated Values) file is utilized by the software. Currently, OPTICS performs the analysis for a fixed geographic and fixed depth station. The three primary file templates for a single fixed platform with sensors measuring at a single depth for a single instant are 1) a csv of predictor variables (sensor data), 2) a csv of response variables (laboratory data) and, 3) a csv .\nThe format of csv files takes a standardized approach to naming convention of the files and columns. The names of the files and columns control the location descriptions and variable names within the GUI interface.\n\nFile Names\nThe two types of file names that are currently used are fixed depth sensor data (predictor variables) and data collected and analyzed within a laboratory (response variables).\nFor fixed location sensor data, the file naming format is Station_LocationIdentifier_Sensor.csv The prefix Station indicates a stationary latitude and longitude, as opposed to transects or mobile data with variable latitude and longitude. The StationIdentifier is a user defined alphanumeric code such as (e.g., 001, 001B, AB2). The Sensor variable files have columns indicating the variable. The first column in the csv must be the named DateTime and have format yyyy-mm-dd HH:MM:SS.SS, where yyyy is the four digit year, mm is the two digit month, dd is the 2 digit day with leading zero for days 1-9, HH is the two digit hour, MM is the two digit minutes, and SS.SS is the seconds including any decimal seconds. The time zone is not specified, and the user must ensure consistency across datasets. The remaining columns can be specified in any order and have format VariableName_Units. The position of the underscore determines the differences between the variable name and units displayed in OPTICS. Variable names and units can include special characters “-“ and “/” and spaces. For the sensor data, each row for each variable must match the value in the DateTime column.\nEach StationIdentifier has a fixed and unique latitude and longitude that is specified in the file Station_ StationIdentifier_Sensor_Coordinates.csv.  The coordinates file must include columns DateTime (formatted as above or limited to just yyyy-mm-dd), Longitude, Latitude, and Elevation. For fixed station locations, this file will consist of only a single row and the elevation column can be left blank. \nThe response variable file (laboratory data) uses the naming format Station_StationIdentifier_Laboratory_LaboratoryVariable.csv. where StationIdentifier uses the same name as defined above and LaboratoryVariable indicates the response variable name (e.g. TPCBs). The first column in the file is DateTime with the same format specified above for the Sensor file. The second column consists of the VariableName_Units. For unitless variables, include an underscore after the variable name (e.g., TPCBs_).",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "gettingstarted.html",
+    "href": "gettingstarted.html",
+    "title": "OPTICS Insight",
+    "section": "",
+    "text": "OPTICS Insight requires credentials to the web-hosted tool. Once credentials are issues, the tool can be accessed from the OPTICS Insight server. For assistance regarding access to OPTICS Insight please contact ENTER",
+    "crumbs": [
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "gettingstarted.html#input-file-format-and-naming",
+    "href": "gettingstarted.html#input-file-format-and-naming",
+    "title": "OPTICS Insight",
+    "section": "Input File Format and Naming",
+    "text": "Input File Format and Naming\nOPTICS reads in user QA/QC data collected from a variety of instrument sensors including optical and acoustic devices, samples collected for laboratory analysis, and GPS positioning. To enhance compatibility with various sensors and platforms, a standardized CSV (Comma Separated Values) file is utilized by the software. Currently, OPTICS performs the analysis for a fixed geographic and fixed depth station. The three primary file templates for a single fixed platform with sensors measuring at a single depth for a single instant are 1) a csv of predictor variables (sensor data), 2) a csv of response variables (laboratory data) and, 3) a csv of station locations (sensor coordinates).\nThe format of csv files takes a standardized approach to naming convention of the files and columns. The names of the files and columns control the location descriptions and variable names within the GUI interface.",
+    "crumbs": [
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "gettingstarted.html#file-names",
+    "href": "gettingstarted.html#file-names",
+    "title": "OPTICS Insight",
+    "section": "File Names",
+    "text": "File Names\nThe two types of file names that are currently used are fixed depth sensor data (predictor variables) and data collected and analyzed within a laboratory (response variables).\nFor fixed location sensor data, the file naming format is Station_LocationIdentifier_Sensor.csv The prefix Station indicates a stationary latitude and longitude, as opposed to transects or mobile data with variable latitude and longitude. The StationIdentifier is a user defined alphanumeric code such as (e.g., 001, 001B, AB2). The Sensor variable files have columns indicating the variable. The first column in the csv must be the named DateTime and have format yyyy-mm-dd HH:MM:SS.SS, where yyyy is the four digit year, mm is the two digit month, dd is the 2 digit day with leading zero for days 1-9, HH is the two digit hour, MM is the two digit minutes, and SS.SS is the seconds including any decimal seconds. The time zone is not specified, and the user must ensure consistency across datasets. The remaining columns can be specified in any order and have format VariableName_Units. The position of the underscore determines the differences between the variable name and units displayed in OPTICS. Variable names and units can include special characters “-“ and “/” and spaces. For the sensor data, each row for each variable must match the value in the DateTime column.\n\n\n\n\n\nEach StationIdentifier has a fixed and unique latitude and longitude that is specified in the file Station_ StationIdentifier_Sensor_Coordinates.csv.  The coordinates file must include columns DateTime (formatted as above or limited to just yyyy-mm-dd), Longitude, Latitude, and Elevation. For fixed station locations, this file will consist of only a single row and the elevation column can be left blank. \n\n\n\n\n\nThe response variable file (laboratory data) uses the naming format Station_StationIdentifier_Laboratory_LaboratoryVariable.csv. where StationIdentifier uses the same name as defined above and LaboratoryVariable indicates the response variable name (e.g. TPCBs). The first column in the file is DateTime with the same format specified above for the Sensor file. The second column consists of the VariableName_Units. For unitless variables, include an underscore after the variable name (e.g., TPCBs_).",
+    "crumbs": [
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "gettingstarted.html#access-to-optics",
+    "href": "gettingstarted.html#access-to-optics",
+    "title": "OPTICS Insight",
+    "section": "",
+    "text": "OPTICS Insight requires credentials to the web-hosted tool. Once credentials are issues, the tool can be accessed from the OPTICS Insight server. For assistance regarding access to OPTICS Insight please contact ENTER",
+    "crumbs": [
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "index.html#resources",
+    "href": "index.html#resources",
+    "title": "OPTICS Insight",
+    "section": "Resources",
+    "text": "Resources\nThe OPTICS methodology has been effectively utilized for environmental monitoring and remediation purposes in aquatic systems. In the examples below, OPTICS field studies were conducted to characterize contaminant dynamics and quantify contaminant concentrations. This approach facilitates the identification of key processes governing contaminant transport and distribution in these ecosystems, allowing for effective remediation strategies and management practices. G. Chang et al. (2018)",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "gettingstarted.html#importing-data",
+    "href": "gettingstarted.html#importing-data",
+    "title": "OPTICS Insight",
+    "section": "Importing Data",
+    "text": "Importing Data\nData for OPTICS analysis is required to be zipped and uploaded to the tool for use. All .csv files associated with a project must be placed in the same folder after formatting above. Once zipped, navigate to tool using the link provided under “Access to OPTICS,” and either select “Example data” or “Upload zip file.” For custom analyses, select “Upload zip file” and navigate to the folder containing the project files.",
+    "crumbs": [
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "gettingstarted.html#station-selection",
+    "href": "gettingstarted.html#station-selection",
+    "title": "OPTICS Insight",
+    "section": "Station Selection",
+    "text": "Station Selection\nPrior to reviewing data, all stations containing a coordinates file is displayed on a map. Navigate to the station of interest to select it for review and analysis. If multiple stations exist with the same latitude and longitude (e.g., one sensor is at depth, one is at the surface), then hoovering over the location marker will expand the site to reveal the two or more locations and allow for selection. The marker for a multi-station site will appear as a different color with a number corresponding to the number of stations at that location. The map is interactive and can be navigated in the same was as any digital map. Selecting a station will open the “Input” tab - navigate to “Reviewing Data” on the menu to learn more about this next step.",
+    "crumbs": [
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "optics.html#background",
+    "href": "optics.html#background",
+    "title": "OPTICS Insight",
+    "section": "Background",
+    "text": "Background\nThe OPTically-based In-situ Characterization System (OPTICS) revolutionizes water quality monitoring at aquatic sites. This patented technology (U.S. Patent No. 11079368) is a uniquely powerful and cost-effective tool for characterizing contaminants in surface water. OPTICS is used for a wide variety of environmental applications including source control evaluation, dredge plume characterization, and remedy performance monitoring.\nOPTICS combines robust aquatic instrumentation and innovative data processing techniques to provide surface water dissolved and particulate concentrations of a wide range of contaminants at unprecedented scales. The novel use of optically-based in-situ monitoring for high-resolution, robust derivation of chemical properties allows for a complete understanding of water quality and contaminant transport in response to natural processes and human impacts.\nBenefits of OPTICS:\n●     High-resolution surface water contaminant characterization\n●     Cost-effective monitoring and assessment tool\n●     Versatile and modular with capability for real-time telemetry\n●     Development and understanding of conceptual site models\n●     Key line of evidence for designing and evaluating remedies\nAdditional information and background regarding OPTICS can be found on the Integral YouTube channel. \nVideo: OPTICS [hyperlink when available",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "optics.html#resources",
+    "href": "optics.html#resources",
+    "title": "OPTICS Insight",
+    "section": "Resources",
+    "text": "Resources\nThe OPTICS methodology has been effectively utilized for environmental monitoring and remediation purposes in aquatic systems. In the examples below, OPTICS field studies were conducted to characterize contaminant dynamics and quantify contaminant concentrations. This approach facilitates the identification of key processes governing contaminant transport and distribution in these ecosystems, allowing for effective remediation strategies and management practices. G. Chang et al. (2018)\nOPTICS Insight development and documentation support provided by Ocean Science Analytics.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "tutorial.html",
+    "href": "tutorial.html",
+    "title": "Guided Tutorial",
+    "section": "",
+    "text": "In this tutorial, you will step through the process of evaluating and analyzing a test dataset available within OPTICS Insight’s example data folder. This takes you from import to output using fictitious data that is arbitrarily assigned to a location. For additional details relating to the steps in this tutorial, visit the documentation options in the menu.",
+    "crumbs": [
+      "Guided Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#data-loading-visualization",
+    "href": "tutorial.html#data-loading-visualization",
+    "title": "Guided Tutorial",
+    "section": "Data Loading & Visualization",
+    "text": "Data Loading & Visualization\n\nNavigate to OPTICS Insight (LIZ HYPERLINK TO FINAL LINK)\nLoad Data: The tool opens to a dark blue screen with two options, “Example data” and “Upload zip file.” Select the “Example data” option and a map should instant appear in the space below with the station data.\n\nNext, you will need to expand the stations at one of the sites where multiple stations have the same latitude/longitude. Click on the green circle with the “3” (NOTE: if your screen is fully expanded, you may just see a “2” with two adjacent stations, as is the case in step #4)\n\n\n\nThe expanded stations will make “Station 005” available. Select this station. You will also see that the “3” has changed to a “2” and if you were to click on that “2” you would see that two additional station options become available. We will use “Station 5” in the example.\n\n\nNOTE: Data were not collected in this region, and are generated for demonstration purposes only!",
+    "crumbs": [
+      "Guided Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#select-data-inputs-for-analysis-liz-replace-figures",
+    "href": "tutorial.html#select-data-inputs-for-analysis-liz-replace-figures",
+    "title": "Guided Tutorial",
+    "section": "Select Data Inputs for Analysis (LIZ REPLACE FIGURES!)",
+    "text": "Select Data Inputs for Analysis (LIZ REPLACE FIGURES!)\nThe next steps take you through data visualization. This data consists of all data that was made available in the provided folder, and in this instance, all environmental and contaminant variables that are contributing to the demonstration. For additional information regarding file format and required csv structure, visit the “Getting Started” section. When you click on the “Station 005” above, the “Input” tab will display with the following details:\n\nA) Station location map for reference\nB) List of laboratory (contaminant) and sensor (environmental) variables available for this station. A global date-time sliding scale controls the temporal query for all values. The number of bins and data transformation controlling regression analysis is in this section as well. For additional details on this section, visit the “Reviewing Data” section from the menu.\nC) Time-series and histogram plots of the selected laboratory variable along with sliding selector to query specific values. The laboratory variable displayed is the one selected in section “B.”\nD) Plot of all sensor variables in the order they are displayed in the box under section B. You can move their location to change the order of these time-series/histogram plots. The range of values for each of the variables can be independently queried and is carried forward to regression analysis.\n\n\nPerform the following steps for data selection:\n\nOn the left-hand “Station 005,” highlight “Turbidity” so it turns dark blue and delete this variable from the list (by simply hitting the delete button). Then select “Phycocyanin” and “pH” individually and delete each of those as well. Move the beginning date slider to “2023-02-05,” and your screen should look like this:\n\nNow, add in one of the variables you deleted (assuming you forgot you required it!) by clicking in the “Sensor Variables” box to reveal the blinking cursor line. Move your cursor to the left so it is in between “Temperature” and “Salinity” and a drop-down menu will appear with the options of variables you can add. Select “pH” and it should then appear in the space between “Temperature” and “Salinity.”\n\n\nIn the plot section, review the laboratory and sensor variables to get a sense of the data. Under “Depth” move the initial selection slider to a value of “2.00004” to select only those values that occur at depths greater than that value (the slider should naturally land on this value when you scroll it to the right). You will notice the pulsing bar at the top will indicate it is updating the other datasets to include these query criteria as well. When the pulsing stops, review the datasets to see how the values of each of the variables have changed.\nYou will notice that if you query a variable using a selection slider, that change will be applied to all variables as associated data points will be eliminated from subsequent analysis. For instance, before shifting the depth, there was an “N” of 12,124 for all sensor variables. After reducing the depth dataset, the “N” value is reduced to 12,083. The same will apply to all sensor variable datasets that are restricted in range.",
+    "crumbs": [
+      "Guided Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#select-and-run-regression-analyses",
+    "href": "tutorial.html#select-and-run-regression-analyses",
+    "title": "Guided Tutorial",
+    "section": "Select and Run Regression Analyses",
+    "text": "Select and Run Regression Analyses\n\nNavigate back to the side panel on the left one more time, and scroll down to the bottom section of the panel under “Station 005.” You will notice there is a “Number of bins” value, a “Data transformation” value, and a “Run regression” button. For our first run, keep these defaults and select the “Run regression” button.\n\nThe “Regression” tab will open and at the top, you will have information on the “Regression ID” (which is the computer date, time, and data transformation you selected). If you had completed your analysis, you would then select the “Save results” button. This will be explained in an additional step below. To the right of the Regression ID and “Save” information are the results of your regression analysis. An explanation of these values is available in the “Regression Analyses” section of the menu.\n\nIn the lower portion of this tab is a summary of the laboratory and sensor variables, as well as the figures related to the regression analysis. These figures are further described in the “Regression Analyses” section.\n\nAfter running a regression, you can return to the “Input” tab to run any number of regressions by re-filtering the data or selecting a data transformation. Navigate to the “Input” tab. NOTE: if you navigate back to the “Select Station” tab, your analyses will be lost, so it is highly recommended you save your results if you decide to move to a separate station for analysis.\n\nIn this next regression run, select the “log” transformation in the “Data transformation” drop-down menu. Retain all other settings/filters for the dataset. After selecting this transformation, select the “Run regression” button again.\n\n\nOn the “Regression” tab, there will now be two separate regression datasets provided, and you can see each of them listed in the “Regression ID” section (with the date/time of the analysis and an extension of the data transformation selection; A). The regression results (B) will indicate the results of each regression and by selecting one of these regression analyses, you will find the plots in the lower section update to reflect your selection.",
+    "crumbs": [
+      "Guided Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#save-and-review-results",
+    "href": "tutorial.html#save-and-review-results",
+    "title": "Guided Tutorial",
+    "section": "Save and Review Results",
+    "text": "Save and Review Results\n\nAfter reviewing the data, select the “Save results” button. This will save all results of your analysis in an “output.zip” file. Identify a location to save your results.\n\nResults are saved to a zipped folder. Extract the results to a folder of your choice (example from un-zipping on a PC machine below, results for Mac machine will look different).\n\nResults consist of the following details and are labeled by station and date and time associated with the analysis run:\nA) An HTML summary of all analyses, wherein you can save figures\nB) Data related to your filtering limits for all variables, for each of the regression analyses you ran\nC) Statistical results of all models, and predicted values of all variables for all regression analyses you ran\n\nIf you would like to save figures from the analysis, open the “.html” file from the saved results.\nA) This section allows you to select from “Summary statistics” or “By regression” (which will open to indicate all regressions you can select from).\nB) For all figures, you can right click and “Save image as…” in order to save specific regression figures to .png or .jpg format for presentations or other media.\n\nNow that you have a handle on how to upload data, review and filter variables, and run regression analyses, enjoy further exploring OPTICS Insight!",
+    "crumbs": [
+      "Guided Tutorial"
+    ]
+  },
+  {
+    "objectID": "datareview.html",
+    "href": "datareview.html",
+    "title": "Reviewing and Filtering Data",
+    "section": "",
+    "text": "Once a station is selected from the “Select Station” tab, an “Input” tab is generated to display all information contained in the selected station folder. The “Input” tab allows for user interaction with the laboratory and sensor variables, and filters by date or specific variable range in order to control what parameters contribute to the regression analysis. The “Input” window is composed of the following elements:\nA) Station location map for the selected dataset\nB) List of laboratory (contaminant) and sensor (environmental) variables available for this station.\nC) A global date-time sliding scale that allows for temporal selection of data. The date-time scale can be changed at both ends to specify the period of interest for analysis.\nD) The “Number of bins” controls the histogram plots and can be adjusted to assist the user to better review and understand the data.\nE) The “Data transformation” tab provides the user with the option of performing either a log transformation or square root transformation of the data. This setting will adjust the figures of each of the variables in the space to the right, and will carry through to the regression analysis. The user is expected to apply a transformation when deemed appropriate for their dataset.\nF) The “Run regression” is the button that runs the modeling analysis after all data filtering and optional transformation is complete.\nG) Time-series and histogram plots of the selected laboratory variable along with sliding selector to query specific values. The laboratory variable displayed is the one selected in section “B.”\nH) Plot of all sensor variables in the order they are displayed in the box under section B. You can move their location to change the order of these time-series/histogram plots. The range of values for each of the variables can be independently filtered and settings are carried forward to regression analysis.\nI) The scroll bar to the right allows the user to view all sensor variables contributing to a regression analysis.",
+    "crumbs": [
+      "Reviewing Data"
+    ]
+  },
+  {
+    "objectID": "datareview.html#sensor-variable-selection",
+    "href": "datareview.html#sensor-variable-selection",
+    "title": "Reviewing and Filtering Data",
+    "section": "Sensor Variable Selection",
+    "text": "Sensor Variable Selection\nLaboratory variables will vary by dataset and can be selected from the the drop-down menu on the left-hand panel. Only one laboratory variable at a time can be selected and used in the regression analysis. Sensor variables can be deleted, and added back in using the “Sensor variables” box of the left-hand panel. Deleting a variable will remove it from analysis. Simply highlight the variable to delete an select the “Delete” button. To include a variable back in the “Sensor variables” list, place the cursor in the window, and move the cursor with the left arrows to the place within the list where the plots should be drawn. Plots are drawn in the order they are placed in the “Sensor variables” box.",
+    "crumbs": [
+      "Reviewing Data"
+    ]
+  },
+  {
+    "objectID": "datareview.html#filtering-and-transforming-data",
+    "href": "datareview.html#filtering-and-transforming-data",
+    "title": "Reviewing and Filtering Data",
+    "section": "Filtering and Transforming Data",
+    "text": "Filtering and Transforming Data\nFiltering data by either time (in the left-hand panel) or by a user-defined range of each variable will adjust the dataset and be incorporated in the subsequent regression analysis. For instance, if a user defines the minimum depth to be two (2) meters, all data points below two meters will be removed across all plots and excluded from analysis. The date-time slider bar is a global setting. Changing a filter setting will take a short time as all figures are updated; a pulsing bar indicates when this update to figures is occurring.\n\nModifying the bins allows the user to evaluate each laboratory and sensor dataset and determine if the data are normally distributed. Depending on the user’s discretion, a data transformation (either a log or square root transformation) can be applied to the dataset. Once the desired filters and settings are selected, the user can perform the regression analysis by selecting the “Run regression” button.",
+    "crumbs": [
+      "Reviewing Data"
+    ]
+  },
+  {
+    "objectID": "analysis.html",
+    "href": "analysis.html",
+    "title": "OPTICS Modeling",
+    "section": "",
+    "text": "OPTICS utilizes multi-parameter statistical regression to determine a combination of in-situ variables that best predicts chemical contaminant concentrations with high variance. OPTICS applies is a statistically based method that identifies combinations of multi-collinear predictors (in-situ, high-resolution measurements) that have large covariance with a response (discrete surface water chemical contaminant concentration data from samples that are collected periodically, coincident with in-situ measurements). The technique combines information about the variances of both the predictors and response, while also considering the correlations among them; therefore, providing a tool with reliable predictive power.",
+    "crumbs": [
+      "OPTICS Modeling"
+    ]
+  },
+  {
+    "objectID": "analysis.html#performing-regression-analyses",
+    "href": "analysis.html#performing-regression-analyses",
+    "title": "OPTICS Modeling",
+    "section": "Performing Regression Analyses",
+    "text": "Performing Regression Analyses\nThe “Run regression” button selected from the “Input” tab performs the regression analysis with the set of sensor variables and filters set by the user. Multiple regressions can be run and compared by navigating back to the “Input” tab, modifying the inputs by transforming the data or further filtering and selecting the “Run regression” button again. Each regression analysis is labeled with the date, time and transformation state (e.g., “none,” “log”) appended to the filename. Results from all analyses are listed in the top right section of the “Regression” tab, allowing for each comparison between results. Selecting an analysis run from the “Regression ID” field loads the figures related to that analysis. An analysis run can be deleted by highlighting the name in the “Regression ID” field and hitting the “delete” tab.\n\n\nRegression Results\nThe results from an analysis run are summarized in tabular and graphical format on the “Regression” tab. In the results figure below:\nA) List of available regression analyses and “Save results” button to download output from analyses.\nB) Table of OPTICS performance statistical metrics including:\n\nN = Number of samples included in the calculation of statistical metrics.\n% var = Percent variance explained, or the proportion to which the OPTICS model accounts for the variation in the data set.\nr = Correlation coefficient (Pearson’s R), a result from linear regression that is a measure of the linear correlation between two variables (i.e., how well data1 are correlated to data2), assuming that both data1 and data2 may contain some error.\nSlope = Model II Slope, a result from linear regression that represents the rate of co-variance in data1 and data2. Model II regressions assume that both data1 and data2 may contain some error. A value of 1.0 indicates no bias in the best-fit regression line; however, it is important to note that the Slope is not a measure of bias in the model or discrete sample data.\nMedian Ratio = Median value of the ratio of data1 to data2; i.e., median of (data1 / data2), a measure of overall over- or under-prediction of a model. A Bias value of 1.0 indicates no bias. Bias is unitless.\nMedian abs % error = median value of the absolute percent difference between data1 and data2; i.e., Median abs % error  = 100 * |data1 – data2| / data2.  Median abs % error is a measure of random error. A mean abs % error value of zero indicates no random error.\nRMSE = Root mean square error, a measure of the differences between data1 and data2. RMSE = \nThe RMSE aggregates the magnitudes of the errors in model predictions in a single measure of predictive power and is a good measure of model accuracy. RMSE is in the same units as the input data.\n\nC) Filter setting associated with the regression analysis as determined from the “Input” tab when data were filtered.\nD) The left-most figure shows the proportion to which the OPTICS model accounts for variation in the data set (i.e., percent variance) as a function of number of model components. The middle figure shows the mean squared error of model predictions (MSEP) as a function of number of model components. In the left and middle figures, the largest number represented by square symbols is the number of components at which MSEP is minimized and is the number of components used to generate OPTICS model results (shown in the right-hand plot and time series figure below). The right-most figure is a modeled versus measured scatterplot and the dashed line is the 1:1 line.\nE) OPTICS model-predicted time series in orange and analytical sample data in black dots for comparison.\n\n\n\n\n\n\n\nSaving Results\nResults from multiple regression analyses can be output simultaneously using the “Save results” button on the “Regression” tab. The results consist of: 1) and html file that contains the analysis table and all figures organized by analysis, 2) a .csv filter file documenting all settings used for data query and filtering per analysis, 3) compiled model results into a single .csv file and 4) predicted values by analysis in .csv files. All results are saved locally to a folder designated by the user.\nNOTE: upon completing analysis, save all outputs immediately as OPTICS Insight disconnects after an extended pause (&gt; 5 minutes) from interacting with the tool.\n\n\n\nReturning to the Station Selection Window\nUpon completion of OPTICS modeling for a given station, results should be saved prior to returning to the station selection window. All results are cleared after navigating back to the “Select Station” tab, and a warning will remind users that data analyses are not saved after leaving.",
+    "crumbs": [
+      "OPTICS Modeling"
+    ]
+  },
+  {
+    "objectID": "analysis.html#best-practices",
+    "href": "analysis.html#best-practices",
+    "title": "OPTICS Modeling",
+    "section": "Best Practices",
+    "text": "Best Practices\nThe OPTICS modeling analytical process expects the user to be familiar with the statistical approach used in this tool, and can effectively interpret data. We encourage users to evaluate regression results to determine what is most appropriate for their specific dataset. Study design and data analysis best practices include:\n\nPerforming a power analysis before data collection is recommended to determine the minimum number of samples required for OPTICS modeling. Samples should cover the widest range of variability possible, which is dependent on the dynamics of the study area. For a tidal system, it is appropriate to sample during spring and neap tide at peak and slack tidal velocities. For systems that are anticipated to change with high flow (e.g., as a result of storms), it is appropriate to sample during or just following storms as possible.\nOpting to transform data requires statistical knowledge of when to implement this process. Generally, if the laboratory data are not normally distributed, a transformation is appropriate. Additionally, exploring modeled versus measured results without a transformation may lead a user to transform the data if there is “spray” in the data or curvature in the regression.",
+    "crumbs": [
+      "OPTICS Modeling"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#select-data-inputs-for-analysis",
+    "href": "tutorial.html#select-data-inputs-for-analysis",
+    "title": "Guided Tutorial",
+    "section": "Select Data Inputs for Analysis",
+    "text": "Select Data Inputs for Analysis\nThe next steps take you through data visualization. This data consists of all data that was made available in the provided folder, and in this instance, all environmental and contaminant variables that are contributing to the demonstration. For additional information regarding file format and required csv structure, visit the “Getting Started” section. When you click on the “Station 005” above, the “Input” tab will display with the following details:\n\nA) Station location map for reference\nB) List of laboratory (contaminant) and sensor (environmental) variables available for this station. A global date-time sliding scale controls the temporal query for all values. The number of bins and data transformation controlling regression analysis is in this section as well. For additional details on this section, visit the “Reviewing Data” section from the menu.\nC) Time-series and histogram plots of the selected laboratory variable along with sliding selector to query specific values. The laboratory variable displayed is the one selected in section “B.”\nD) Plot of all sensor variables in the order they are displayed in the box under section B. You can move their location to change the order of these time-series/histogram plots. The range of values for each of the variables can be independently queried and is carried forward to regression analysis.\n\n\nPerform the following steps for data selection:\n\nOn the left-hand “Station 005,” highlight “Turbidity” so it turns dark blue and delete this variable from the list (by simply hitting the delete button). Then select “Phycocyanin” and “pH” individually and delete each of those as well. Move the beginning date slider to “2023-02-05,” and your screen should look like this:\n\nNow, add in one of the variables you deleted (assuming you forgot you required it!) by clicking in the “Sensor Variables” box to reveal the blinking cursor line. Move your cursor to the left so it is in between “Temperature” and “Salinity” and a drop-down menu will appear with the options of variables you can add. Select “pH” and it should then appear in the space between “Temperature” and “Salinity.”\n\n\nIn the plot section, review the laboratory and sensor variables to get a sense of the data. Under “Depth” move the initial selection slider to a value of “2.00004” to select only those values that occur at depths greater than that value (the slider should naturally land on this value when you scroll it to the right). You will notice the pulsing bar at the top will indicate it is updating the other datasets to include these query criteria as well. When the pulsing stops, review the datasets to see how the values of each of the variables have changed.\nYou will notice that if you query a variable using a selection slider, that change will be applied to all variables as associated data points will be eliminated from subsequent analysis. For instance, before shifting the depth, there was an “N” of 12,124 for all sensor variables. After reducing the depth dataset, the “N” value is reduced to 12,083. The same will apply to all sensor variable datasets that are restricted in range.",
+    "crumbs": [
+      "Guided Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#perform-regression-analyses",
+    "href": "tutorial.html#perform-regression-analyses",
+    "title": "Guided Tutorial",
+    "section": "Perform Regression Analyses",
+    "text": "Perform Regression Analyses\n\nNavigate back to the side panel on the left one more time, and scroll down to the bottom section of the panel under “Station 005.” You will notice there is a “Number of bins” value, a “Data transformation” value, and a “Run regression” button. For our first run, keep these defaults and select the “Run regression” button.\n\nThe “Regression” tab will open and at the top, you will have information on the “Regression ID” (which is the computer date, time, and data transformation you selected). If you had completed your analysis, you would then select the “Save results” button. This will be explained in an additional step below. To the right of the Regression ID and “Save” information are the results of your regression analysis. An explanation of these values is available in the “Regression Analyses” section of the menu.\n\nIn the lower portion of this tab is a summary of the laboratory and sensor variables, as well as the figures related to the regression analysis. These figures are further described in the “Regression Analyses” section.\n\nAfter running a regression, you can return to the “Input” tab to run any number of regressions by re-filtering the data or selecting a data transformation. Navigate to the “Input” tab. NOTE: if you navigate back to the “Select Station” tab, your analyses will be lost, so it is highly recommended you save your results if you decide to move to a separate station for analysis.\n\nIn this next regression run, select the “log” transformation in the “Data transformation” drop-down menu. Retain all other settings/filters for the dataset. After selecting this transformation, select the “Run regression” button again.\n\n\nOn the “Regression” tab, there will now be two separate regression datasets provided, and you can see each of them listed in the “Regression ID” section (with the date/time of the analysis and an extension of the data transformation selection; A). The regression results (B) will indicate the results of each regression and by selecting one of these regression analyses, you will find the plots in the lower section update to reflect your selection.",
+    "crumbs": [
+      "Guided Tutorial"
+    ]
+  }
+]
