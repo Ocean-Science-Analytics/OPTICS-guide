@@ -8,7 +8,7 @@ In this tutorial, you will step through the process of evaluating and analyzing 
 
 1.  Navigate to [OPTICS Insight](https://envision.shinyapps.io/OPTICSInsightBeta/).
 
-2.  Load Data: The tool opens to a dark blue screen with two options, "Example data" and "Upload zip file." Select the "Example data" option and a map should instant appear in the space below with the station data.
+2.  Load Data: The tool opens to a dark blue screen with two options, "Tutorial Data" and "Upload study data (zip)" Select the "Tutorial Data" option and a map should instantly appear in the space below the data selection buttons. If you were using OPTICS for your own data, you would instead upload a zipped folder with prepared csvs for each station.
 
     ![](images/1-example-data.png){width="498"}
 
