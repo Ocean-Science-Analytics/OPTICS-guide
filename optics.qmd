@@ -40,7 +40,7 @@ OPTICS (OPTically-based In-situ Characterization System) integrates commercial, 
 
 The physical processes of light interaction with water can be measured in-situ using optical instrumentation. Sensors such as fluorometers, backscattering sensors, laser diffraction sensors, and absorption meters can be strategically placed in aquatic systems to gain valuable information about the types and concentration of particles and dissolved material and particle size distribution. The OPTICS tool makes use of these sensors, along with other aquatic instrumentation, and periodic discrete analytical samples of chemical contaminants to characterize COCs in surface water at high resolution.
 
-![](images/optics-deployment.jpg){fig-align="center" width="309"}
+![](images/optics-deployment.jpg){fig-align="center" width="236"}
 
 ## **Resources**
 
