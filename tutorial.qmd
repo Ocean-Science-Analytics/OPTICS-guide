@@ -8,7 +8,7 @@ In this tutorial, you will step through the process of evaluating and analyzing 
 
 1.  Navigate to [OPTICS Insight](https://envision.shinyapps.io/OPTICSInsightBeta/).
 
-2.  Load Data: The tool opens to a dark blue screen with two options, "Tutorial Data" and "Upload study data (zip)" Select the "Tutorial Data" option and a map should instantly appear in the space below the data selection buttons. If you were using OPTICS for your own data, you would instead upload a zipped folder with prepared csvs for each station.
+2.  Load Data: The tool opens to a dark blue screen with two options, "Tutorial Data" and "Upload study data (zip)." Select the "Tutorial Data" option, and a map should instantly appear in the space below the data selection buttons. If you were using OPTICS for your own data, you would instead upload a zipped folder with prepared csvs for each station.
 
     ![](images/1-example-data.png){width="498"}
 
@@ -52,11 +52,15 @@ Perform the following steps for data selection:
 
 ## **Perform Regression Analyses**
 
+The "Run regression" button selected from the "Input" tab performs the regression analysis with the set of sensor variables and filters set by the user. Multiple regressions can be run and compared by navigating back to the "Input" tab, modifying the inputs by transforming the data or further filtering and selecting the "Run regression" button again. Each regression analysis is labeled with the date, time and transformation state (e.g., "none," "log") appended to the filename. Results from all analyses are listed in the top right section of the "Regression" tab, allowing for each comparison between results. Selecting an analysis run from the "Regression ID" field loads the figures related to that analysis. An analysis run can be deleted by highlighting the name in the "Regression ID" field and hitting the "delete" tab.
+
+{{< video videos/regression-analyses.mp4 >}}
+
 7.  Navigate back to the side panel on the left one more time, and scroll down to the bottom section of the panel under "Station 005." You will notice there is a "Number of bins" value, a "Data transformation" value, and a "Run regression" button. For our first run, keep these defaults and select the "Run regression" button.
 
     ![](images/7-bottom-of-sidebar.png){width="323"}
 
-8.  The "Regression" tab will open and at the top, you will have information on the "Regression ID" (which is the computer date, time, and data transformation you selected). If you had completed your analysis, you would then select the "Save results" button. This will be explained in an additional step below. To the right of the Regression ID and "Save" information are the results of your regression analysis. An explanation of these values is available in the "Regression Analyses" section of the menu.
+8.  The "Regression" tab will open and at the top, you will have information on the "Regression ID" (which is the computer date, time, and data transformation you selected). If you had completed your analysis, you would then select the "Save results" button. This will be explained in an additional step below. To the right of the Regression ID and "Save" information are the results of your regression analysis. NOTE: For additional information regarding the output values, navigate to the "Regression Analyses" section of the menu.
 
     ![](images/8-results-and-save.png)
 
@@ -76,7 +80,7 @@ Perform the following steps for data selection:
 
 ## **Save and Review Results**
 
-12. After reviewing the data, select the "Save results" button. This will save all results of your analysis in an "output.zip" file. Identify a location to save your results.
+12. After reviewing the data, select the "Save results" button. This will save all results of your analysis in zipped file labeled with "OPTICS Insight Summary..." along with the date and time you generated the results. Identify a location to save your results.
 
     ![](images/11-save-all-results.png){width="481"}
 

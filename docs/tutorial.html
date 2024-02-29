@@ -39,6 +39,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -179,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="data-loading-visualization"><strong>Data Loading &amp; Visualization</strong></h2>
 <ol type="1">
 <li><p>Navigate to <a href="https://envision.shinyapps.io/OPTICSInsightBeta/">OPTICS Insight</a>.</p></li>
-<li><p>Load Data: The tool opens to a dark blue screen with two options, “Tutorial Data” and “Upload study data (zip)” Select the “Tutorial Data” option and a map should instantly appear in the space below the data selection buttons. If you were using OPTICS for your own data, you would instead upload a zipped folder with prepared csvs for each station.</p>
+<li><p>Load Data: The tool opens to a dark blue screen with two options, “Tutorial Data” and “Upload study data (zip).” Select the “Tutorial Data” option, and a map should instantly appear in the space below the data selection buttons. If you were using OPTICS for your own data, you would instead upload a zipped folder with prepared csvs for each station.</p>
 <p><img src="images/1-example-data.png" class="img-fluid" width="498"></p></li>
 <li><p>Next, you will need to expand the stations at one of the sites where multiple stations have the same latitude/longitude. Click on the green circle with the “3” (<strong>NOTE</strong>: if your screen is fully expanded, you may just see a “2” with two adjacent stations, as is the case in step #4)</p></li>
 </ol>
@@ -214,10 +216,12 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="perform-regression-analyses" class="level2">
 <h2 class="anchored" data-anchor-id="perform-regression-analyses"><strong>Perform Regression Analyses</strong></h2>
+<p>The “Run regression” button selected from the “Input” tab performs the regression analysis with the set of sensor variables and filters set by the user. Multiple regressions can be run and compared by navigating back to the “Input” tab, modifying the inputs by transforming the data or further filtering and selecting the “Run regression” button again. Each regression analysis is labeled with the date, time and transformation state (e.g., “none,” “log”) appended to the filename. Results from all analyses are listed in the top right section of the “Regression” tab, allowing for each comparison between results. Selecting an analysis run from the “Regression ID” field loads the figures related to that analysis. An analysis run can be deleted by highlighting the name in the “Regression ID” field and hitting the “delete” tab.</p>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="videos/regression-analyses.mp4"></video></div>
 <ol start="7" type="1">
 <li><p>Navigate back to the side panel on the left one more time, and scroll down to the bottom section of the panel under “Station 005.” You will notice there is a “Number of bins” value, a “Data transformation” value, and a “Run regression” button. For our first run, keep these defaults and select the “Run regression” button.</p>
 <p><img src="images/7-bottom-of-sidebar.png" class="img-fluid" width="323"></p></li>
-<li><p>The “Regression” tab will open and at the top, you will have information on the “Regression ID” (which is the computer date, time, and data transformation you selected). If you had completed your analysis, you would then select the “Save results” button. This will be explained in an additional step below. To the right of the Regression ID and “Save” information are the results of your regression analysis. An explanation of these values is available in the “Regression Analyses” section of the menu.</p>
+<li><p>The “Regression” tab will open and at the top, you will have information on the “Regression ID” (which is the computer date, time, and data transformation you selected). If you had completed your analysis, you would then select the “Save results” button. This will be explained in an additional step below. To the right of the Regression ID and “Save” information are the results of your regression analysis. NOTE: For additional information regarding the output values, navigate to the “Regression Analyses” section of the menu.</p>
 <p><img src="images/8-results-and-save.png" class="img-fluid"></p></li>
 <li><p>In the lower portion of this tab is a summary of the laboratory and sensor variables, as well as the figures related to the regression analysis. These figures are further described in the “Regression Analyses” section.</p>
 <p><img src="images/8-reg-filters-figures.png" class="img-fluid"></p></li>
@@ -233,7 +237,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="save-and-review-results" class="level2">
 <h2 class="anchored" data-anchor-id="save-and-review-results"><strong>Save and Review Results</strong></h2>
 <ol start="12" type="1">
-<li><p>After reviewing the data, select the “Save results” button. This will save all results of your analysis in an “output.zip” file. Identify a location to save your results.</p>
+<li><p>After reviewing the data, select the “Save results” button. This will save all results of your analysis in zipped file labeled with “OPTICS Insight Summary…” along with the date and time you generated the results. Identify a location to save your results.</p>
 <p><img src="images/11-save-all-results.png" class="img-fluid" width="481"></p></li>
 <li><p>Results are saved to a zipped folder. Extract the results to a folder of your choice (example from un-zipping on a PC machine below, results for Mac machine will look different).</p>
 <p><img src="images/12-extract-results.png" class="img-fluid" width="478"></p></li>
@@ -641,6 +645,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 

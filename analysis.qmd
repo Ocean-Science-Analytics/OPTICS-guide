@@ -44,9 +44,9 @@ E\) OPTICS model-predicted time series in orange and analytical sample data in b
 
 ### Saving Results
 
-Results from multiple regression analyses can be output simultaneously using the "Save results" button on the "Regression" tab. The results consist of: 1) and html file that contains the analysis table and all figures organized by analysis, 2) a .csv filter file documenting all settings used for data query and filtering per analysis, 3) compiled model results into a single .csv file and 4) predicted values by analysis in .csv files. All results are saved locally to a folder designated by the user.
+Results from multiple regression analyses can be output simultaneously using the "Save results" button on the "Regression" tab. The results consist of: 1) and html file that contains the analysis table and all figures organized by analysis, 2) a .csv filter file documenting all settings used for data query and filtering per analysis, 3) compiled model results into a single .csv file and 4) predicted values by analysis in .csv files. All results (including all regressions that were generated) are saved locally to a folder designated by the user, and are labeled with "OPTICS Insight Summary..." along with the date and time you generated the results.
 
-NOTE: upon completing analysis, save all outputs immediately as OPTICS Insight disconnects after an extended pause (\> 5 minutes) from interacting with the tool.
+NOTE: upon completing the analysis, save all outputs immediately as OPTICS Insight disconnects after an extended pause (\> 5 minutes) from interacting with the tool.
 
 {{< video videos/saving-results.mp4 >}}
 

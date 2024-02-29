@@ -11,7 +11,7 @@ OPTICS Insight requires credentials to the web-hosted tool. Once credentials are
 
 OPTICS reads in user QA/QC data collected from a variety of instrument sensors including optical and acoustic devices, samples collected for laboratory analysis, and GPS positioning. To enhance compatibility with various sensors and platforms, a standardized CSV (Comma Separated Values) file is utilized by the software. Currently, OPTICS performs the analysis for a fixed geographic and fixed depth station. The three primary file templates for a single fixed platform with sensors measuring at a single depth for a single instant are 1) a csv of predictor variables (sensor data), 2) a csv of response variables (laboratory data) and, 3) a csv of station locations (sensor coordinates).
 
-The format of csv files takes a standardized approach to naming convention of the files and columns. The names of the files and columns control the location descriptions and variable names within the GUI interface.
+The format of csv files takes a standardized approach to naming convention of the files and columns. The names of the files and columns control the location descriptions and variable names within the GUI interface. OPTICS Insight allows for the analysis of QA/QC (quality assurance, quality control) data. Examples of QA/QC techniques for oceanographic data can be found on the [QARTOD](https://ioos.noaa.gov/project/qartod/) site.
 
 ## **File Names**
 
@@ -31,7 +31,7 @@ The response variable file (laboratory data) uses the naming format Station\_*St
 
 ## **Importing Data**
 
-Data for OPTICS analysis is required to be zipped and uploaded to the tool for use. All .csv files associated with a project must be placed in the same folder after formatting above. Once zipped, navigate to tool using the link provided under "Access to OPTICS," and either select "Example data" or "Upload zip file." For custom analyses, select "Upload zip file" and navigate to the folder containing the project files.
+Data for OPTICS analysis is required to be zipped and uploaded to the tool for use. All .csv files associated with a project must be placed in the same folder after formatting above. Once zipped, navigate to the tool using the link provided under "Access to OPTICS," and either select "Tutorial Data" or "Upload study data (zip)." For custom analyses, select "Upload study data (zip)" and navigate to the folder on your local computer that contains your project files.
 
 **NOTE: This data is artificial and generated to demonstrate OPTICS capabilities only. The locations are arbitrarily selected.**
 
@@ -39,6 +39,6 @@ Data for OPTICS analysis is required to be zipped and uploaded to the tool for u
 
 ## **Station Selection**
 
-Prior to reviewing data, all stations containing a coordinates file is displayed on a map. Navigate to the station of interest to select it for review and analysis. If multiple stations exist with the same latitude and longitude (e.g., one sensor is at depth, one is at the surface), then hoovering over the location marker will expand the site to reveal the two or more locations and allow for selection. The marker for a multi-station site will appear as a different color with a number corresponding to the number of stations at that location. The map is interactive and can be navigated in the same was as any digital map. Selecting a station will open the "Input" tab - navigate to "Reviewing Data" on the menu to learn more about this next step.
+Prior to reviewing data, all stations containing a coordinates file are displayed on a map. Navigate to the station of interest to select it for review and analysis. If multiple stations exist with the same latitude and longitude (e.g., one sensor is at depth, one is at the surface), then hovering over the location marker will expand the site to reveal two or more locations and allow for selection. The marker for a multi-station site will appear as a different color with a number corresponding to the number of stations at that location. The map is interactive and can be navigated in the same way as any digital map. Selecting a station will open the "Input" tab - navigate to "Reviewing Data" on the menu to learn more about this next step.
 
 {{< video videos/station-selection.mp4 >}}
