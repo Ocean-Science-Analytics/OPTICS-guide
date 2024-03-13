@@ -10,7 +10,7 @@ The "Input" window is composed of the following elements:
 
 A\) Station location map for the selected dataset
 
-B\) List of laboratory (contaminant) and sensor (environmental) variables available for this station. Note that all variables that are selected in this window will be used in the regression analysis.
+B\) List of laboratory (contaminant) and sensor (environmental) variables available for this station. Note that all variables that are selected in this window will be used in the regression analysis. You can select one sensor variable at a time to delete it from the list. If you want to add it back into the list, place your cursor after the last variable and move the cursor using the arrows on the keyboard to a place in between two variables where you want to add it, then start typing the variable name and select from the drop-down menu. NOTE: you cannot drag and reorder variables, but instead have to delete one, then proceed with moving your cursor using the keyboard arrows to the place where you want to add it.
 
 C\) A global date-time sliding scale that allows for temporal selection of data. The date-time scale can be changed at both ends to specify the period of interest for analysis.
 

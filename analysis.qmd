@@ -14,25 +14,25 @@ The "Run regression" button selected from the "Input" tab performs the regressio
 
 The results from an analysis run are summarized in tabular and graphical format on the "Regression" tab. In the results figure below:
 
-A\) List of available regression analyses and "Save results" button to download output from analyses.
+A\) List of available regression analyses and "Save results" button to download output from analyses. The date, time and transformation ("none" meaning no transformation) is stored in the filename for each run. The date and time is in GMT, as the processing is done virtually and cannot access your local computer time.
 
 B\) Table of OPTICS performance statistical metrics including:
 
 -   N = Number of samples included in the calculation of statistical metrics.
 
--   \% var = Percent variance explained, or the proportion to which the OPTICS model accounts for the variation in the data set.
+-   \% var = Percent variance explained, or the proportion to which the OPTICS model accounts for the variation in the data set. A higher percentage of variance explained indicates that the OPTICS model can better predict or capture the variability present in the data set. Conversely, a lower percentage suggests that the model may not adequately capture the complexity or underlying structure of the data.
 
--   r = Correlation coefficient (Pearson’s R), a result from linear regression that is a measure of the linear correlation between two variables (i.e., how well data1 are correlated to data2), assuming that both data1 and data2 may contain some error.
+-   r = Correlation coefficient (Pearson’s R), a result from linear regression that is a measure of the linear correlation between two variables (i.e., how well data1 are correlated to data2), assuming that both data1 and data2 may contain some error. The values of r that indicate the best model fit are typically close to 1 or -1, suggesting a strong positive or negative linear relationship respectively, between the two variables.
 
--   Slope = Model II Slope, a result from linear regression that represents the rate of co-variance in data1 and data2. Model II regressions assume that both data1 and data2 may contain some error. A value of 1.0 indicates no bias *in the best-fit regression line*; however, it is important to note that the Slope is not a measure of bias in the model or discrete sample data.
+-   Slope = Model II Slope, a result from linear regression that represents the rate of co-variance in data1 and data2. Model II regressions assume that both data1 and data2 may contain some error. A value of 1.0 indicates no bias *in the best-fit regression line* signifying optimal model fit; however, it is important to note that the Slope is not a measure of bias in the model or discrete sample data. Therefore, while a Slope of 1.0 suggests ideal alignment, other metrics should also be considered to comprehensively evaluate model performance.
 
--   Median Ratio = Median value of the ratio of data1 to data2; i.e., median of (data1 / data2), a measure of overall over- or under-prediction of a model. A Bias value of 1.0 indicates no bias. Bias is unitless.
+-   Median Ratio = Median value of the ratio of data1 to data2; i.e., median of (data1 / data2), a measure of overall over- or under-prediction of a model. A Bias value of 1.0 indicates no bias, with values deviating from 1.0 indicating over- or underestimation of the tendencies of the model. Bias is unitless.
 
--   Median abs % error = median value of the absolute percent difference between data1 and data2; i.e., Median abs % error  = 100 \* \|data1 – data2\| / data2.  Median abs % error is a measure of random error. A mean abs % error value of zero indicates no random error.
+-   Median abs % error = median value of the absolute percent difference between data1 and data2; i.e., Median abs % error  = 100 \* \|data1 – data2\| / data2.  Median abs % error is a measure of random error. A mean abs % error value of zero indicates no random error, suggesting better model performance.
 
 -   RMSE = Root mean square error, a measure of the differences between data1 and data2. RMSE = ![](images/RMSE.png)
 
-    The RMSE aggregates the magnitudes of the errors in model predictions in a single measure of predictive power and is a good measure of model accuracy. RMSE is in the same units as the input data.
+    The RMSE aggregates the magnitudes of the errors in model predictions in a single measure of predictive power and is a good measure of model accuracy. RMSE is in the same units as the input data. Lower values of RMSE indicate better model performance, with RMSE = 0 indicating optimal model performance.
 
 C\) Filter setting associated with the regression analysis as determined from the "Input" tab when data were filtered.
 
