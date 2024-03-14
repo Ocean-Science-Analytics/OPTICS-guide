@@ -46,6 +46,6 @@ The physical processes of light interaction with water can be measured in-situ u
 
 The OPTICS methodology has been effectively utilized for environmental monitoring and remediation purposes in aquatic systems. In the examples below, OPTICS field studies were conducted to characterize contaminant dynamics and quantify contaminant concentrations. This approach facilitates the identification of key processes governing contaminant transport and distribution in these ecosystems, allowing for effective remediation strategies and management practices. [@chang2018, @chang2018b, @chang2024]
 
-OPTICS Insight development and documentation support provided by Ocean Science Analytics.
+OPTICS Insight development and documentation support provided by [Ocean Science Analytics](https://www.oceanscienceanalytics.com/).
 
 ![](images/white_square_OSA_med.jpg){width="107"}
