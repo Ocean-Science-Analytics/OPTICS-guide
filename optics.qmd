@@ -42,6 +42,52 @@ The physical processes of light interaction with water can be measured in-situ u
 
 ![](images/optics-deployment.jpg){fig-align="center" width="236"}
 
+## **OPTICS recommended operating procedures**
+
+Prior to OPTICS monitoring, a conceptual site model (CSM) should be developed with, at a minimum, a basic understanding of the key drivers of environmental variability. The CSM informs OPTICS monitoring location(s), time period(s) and duration, sensor type(s), sampling resolution, analytical sampling method(s), etc. Updates to the CSM should inform additional analytical data collection for OPTICS model calibration/validation data, particularly if significant changes to the system occur, e.g., remediation.
+
+### [Site Characteristics]{.underline}
+
+-   **Sample Matrix**: At this time, OPTICS is suitable for surface water applications only. Groundwater applications are theoretically possible; however, more research and validation would be necessary to ensure accuracy.
+
+-   **Water Type**: OPTICS has been validated for lacustrine, estuarine, coastal, and open ocean environments.
+
+-   **Water Depth**: OPTICS operational water depth informs, and is dependent on instrumentation and deployment methods. OPTICS sensors have been successfully deployed in tidal environments that experience wetting and drying, as well as deeper water environments. Depth limitations are defined by sensor specifications and the ability to collect analytical samples.
+
+-   **Site Accessibility**: The OPTICS deployment site must be accessible via vessel or other means for instrumentation deployment and recovery and collocated analytical sample collection.
+
+-   **Site Security**: OPTICS sensors must be secure against vandalism and theft, which may involve use of deployment methods with no surface expression.
+
+### [Recommendations]{.underline}
+
+-   **Chemicals of Concern (COCs)**
+
+    -   Type: OPTICS has been proven successful for hydrophobic COCs such as heavy metals (mercury, methylmercury, copper, lead), polychlorinated biphenyls (PCBs), pesticides (dieldrin), and dioxins. It has shown to have less utility for COCs that may be transformed through biological or chemical processes (e.g., polyaromatic hydrocarbons).
+
+    -   Phase: OPTICS has been applied to accurately derive filtered and unfiltered COCs (and particulate by difference).
+
+    -   Concentration: OPTICS utility is limited to the range of detectability for analytical samples, i.e., analytical samples must have detectable readings to be suitable for OPTICS applications.
+
+-   **Analytical Samples**
+
+    -   Number: Power analysis should be performed to determine the minimum number of analytical samples to be collected for OPTICS modeling. Samples must cover a wide range of variability observed at the site. For example, at a tidal system, samples should be collected at peak flood and ebb tide and slack high and low, as well as spring and neap tidal conditions. For stormflow, samples should be collected to cover baseline and the start, peak, and cessation of flow, over a wide range of flowrates.
+
+    -   Sample Location and Time: Analytical samples must be collected, collocated with in situ measurements, as close as possible both horizontally and vertically and at the same time (within minutes at worst).
+
+    -   Sampling Protocols: Analytical sampling and analysis techniques should follow published standard operating procedures provided by, e.g., the U.S. Environmental Protection Agency.
+
+    -   Quality assurance/quality control (QA/QC): QA/QC must be performed for analytical data set prior to OPTICS modeling.
+
+    -   OPTIONAL: Outlier analysis for analytical data may be necessary to evaluate effects of outliers on OPTICS model results.
+
+-   **In Situ Data**
+
+    -   Parameters: In situ parameters must characterize particulates and/or dissolved material, as well as the drivers of environmental variability in the system. For example, at a tidal system, salinity, water depth, and/or current velocity should be measured.
+
+    -   Protocols: In situ sampling and analysis techniques should follow sensor manufacturer provided protocols, including calibrations (if any) and corrections (if any).
+
+    -   QA/QC: Must be performed for the in situ data set prior to OPTICS modeling. Recommend following published National Oceanic and Atmospheric Administration Integrated Ocean Observing System methods.
+
 ## **Resources**
 
 The OPTICS methodology has been effectively utilized for environmental monitoring and remediation purposes in aquatic systems. In the examples below, OPTICS field studies were conducted to characterize contaminant dynamics and quantify contaminant concentrations. This approach facilitates the identification of key processes governing contaminant transport and distribution in these ecosystems, allowing for effective remediation strategies and management practices. [@chang2018, @chang2018b, @chang2024]
