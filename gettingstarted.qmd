@@ -5,7 +5,7 @@ subtitle: ""
 
 ## **Access to OPTICS**
 
-OPTICS Insight requires credentials to the web-hosted tool. Once credentials are issues, the tool can be accessed from the OPTICS Insight server.
+[OPTICS Insight](https://envision.shinyapps.io/OPTICSInsight/) requires credentials to the web-hosted tool. Once credentials are issues, the tool can be accessed from the OPTICS Insight server.
 
 ## **Input File Format and Naming**
 
